@@ -93,3 +93,19 @@ With a lot of love 💖, motivation to help others 💪🏼 and [Python](https:/
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
+To get a local copy up and running follow these simple steps
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them. 
+
+For this particular section I will suppose that you already have a Raspberry Pi already setup. If not I have a guide in Medium about [getting started on Raspberry Pi 4](https://fullmakeralchemist.medium.com/setting-up-your-raspberry-pi-4-wireless-f51c16937d1e). Also you will need git installed on your system. If not, I have a guide posted on [Medium](https://fullmakeralchemist.medium.com/install-git-and-visual-studio-code-on-raspberry-pi-48d054fdee07) to do it .
+For a general overview of the Arduino Nano 33 BLE Sense setup, you can check out the Arduino Guide on [Getting started with Arduino Nano 33 BLE Sense](https://www.arduino.cc/en/Guide/NANO33BLESense).
+
+Before installing the libraries in Raspberry Pi run the following code lines:
+
+```
+sudo apt update
+sudo apt upgrade
+```
