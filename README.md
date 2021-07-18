@@ -140,7 +140,7 @@ pi@raspberry:~ $  mosquitto -v
 This returns the Mosquitto version that is currently running in your Raspberry Pi. It should be 1.5.X or above.
 
 <center>
-<img src="assets/mosquittov.png" width="80%">
+<img src="assets/mosquittov.png" width="60%">
 </center>
 
 #### Raspberry Pi IP Address & Paho Package
@@ -149,6 +149,10 @@ To use Mosquitto broker later on your projects, you’ll need your Raspberry Pi 
 ```
 pi@raspberry:~ $ hostname -I
 ```
+<center>
+<img src="assets/iprasp.png" width="60%">
+</center>
+
 The Paho package provides a client class which enables applications to connect to an MQTT broker to publish messages, and to subscribe to topics and receive published messages. In this project, the Python script is going to publish messages to the ESP8266 to turn the GPIOs on and off to control the lights.
 To install paho-mqtt run the following command:
 
@@ -168,7 +172,11 @@ To install the ESP8266 Board Package enter:
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
 Into Additional Board Manager URLs field in the Arduino v1.6.4+ preferences.
-<!-- IMAGE -->
+
+<center>
+<img src="assets/boardurl.png" width="60%">
+</center>
+
 Next, use the Board manager to install the ESP8266 package.
 <!-- image -->
 
