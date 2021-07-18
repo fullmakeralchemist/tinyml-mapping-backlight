@@ -16,6 +16,7 @@
   <a href="https://github.com/fullmakeralchemist/tinyml-mapping-backlight">
     <img src="assets/logo.png" alt="Logo" width="480">
   </a>
+  <br />
 
   <a href="https://www.linkedin.com/in/fullmakeralchemist/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn" height="25">
@@ -28,5 +29,24 @@
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
   </p>
+  <br />
 </p>
 <br />
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Motivation](#motivation)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Data Exploration](#data-exploration)
+  * [Model Training](#model-training)
+  * [Mapping and lightning Script Running](#script)
+  * [Model Serving](#model-serving)
+* [Roadmap](#roadmap)
+* [License](#license)
+* [Contact](#contact)
