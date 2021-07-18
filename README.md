@@ -212,3 +212,66 @@ As part of the project development I have implemented the proposed model using T
 Although the results may not seem quite good, the model has achieved an accuracy value of 0.9149 on the validation dataset with 600 training epochs, with a record of at least 20 repeats of the movement recorded with the arduino capture file, also I try with 30 and 40 reparts, with more repetitions of the movement gets a better result, the problem is it gets tired repeat a movement so many times. We can get a general idea of the model performance in the arduino tinyimu file running the model printing the **line data.f[i] in the loop through the output tensor values from the model**.
 
 The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in the same folder.
+
+### Running Mapping Script
+
+<!-- image gifs -->
+
+The script is the base of interaction for the player of mapping and lightning during the movements made. 
+The script has been entirely developed with Python on top of a VLC and MQTT integration, for a more intuitive and synchronous interaction. The script serves a real-time player, and lightning activation is served through the trained model that is deployed on the Arduino Nano 33 BLE Sense, which sends the data by serial connection to a ESP8266 board wireless using the MQTT broker. The script has to be changed on the line using the IP from the Raspberry to access the remote control of the lights and if the media is differente will have to be changed the path and the file name I will add the media that I used for this project on this link.
+
+### Perform the Model
+
+The following image illustrates a general idea of the model working with the Raspberry Pi and the ESP8266 :
+
+
+<!-- image LAST -->
+
+
+
+Once that model has been trained, saved, quantized, encoded in an Arduino Header File to use in an Arduino Nano 33 BLE Sense and downloaded, the model has been ported into a TinyIMU Ino file. The Arduino connects directly to the Raspberry, then the lights mqtt ino file is uploaded to the ESP8266 board. We can run the script to run the animation on the projector and activate the lights as the deployed model predicts.
+
+The script that serves as the interface between the Raspberry Pi, Arduino and the ESP8266 BOARD is capable of printing the state of the VLC player as well as the MQTT connection don’t need the internet connection, just connected to the same router that is connected the ESP8266 board and the Arduno also can works on a hotspot in a smartphone. In general, the script takes only ~14% of the Raspberry Pi CPU it could be more if there are a lot of VLC windows open so I add a condition related to the state of the player so when the animation is over the player is closed to reduce the CPU use to avoid unnecessary CPU usage.
+
+
+## Challenges I ran into and What I learned
+
+One of the main challenges was to create a model in Tensorflow without having much knowledge about Machine Learning, my major area of studies is hydrology, and irrigation. That's why I got the Tiny ML book from Pete Warden and Daniel Situnayake and then I found the Tiny Ml Workshop resource may result in the most suitable code resource to tackle this area of necessity. 
+
+The second main challenge (once I learned about creating the model on Arduino) was to create bluetooth connections without having much knowledge about the BLE library, I used before for other irrigation projects WiFi connection using Firebase real-time database and MQTT. This is why I found that Mosquitto and Paho on Raspberry Pi may result in the most suitable technologies to tackle wireless connection, so it could get control in real-time. 
+
+Finally, this is the first time I use a trained model using tflite on an Arduino with Raspberry Pi. In the end, I learned that whenever you may think that you found no way out, the motivation may help you to find alternative solutions with new technologies.
+
+## Observations about the project
+
+The Bluetooth connection has a limited number of devices to connect on the Raspberry Pi, it only allows 7 devices using bluetooth. In windows is 10 devices so with a lot of dancers it will be difficult using bluetooth. 
+
+Training the moves could be hard doing more than 20 repetitions of a movement, also I realize recording the moves, that is necessary to be really precise doing the movements, the difference in each repetition affects the model precision. 
+
+## Accomplishments that I'm proud of
+
+- Building a custom script to just change a few variables
+- Sending data using the BLE library to my laptop using Python
+- Sending messages to a ESP8266 board using MQTT
+- Learning new technologies in a record time
+- Start creating a tool that will help others
+
+## What's next for Tiny ML in Mapping Dance, Visual Arts and interactive museums
+
+- Develop own embedded device for the model deployment (which should already include a accelerometer, gyroscope and a wifi connection)
+- Improve user data acquisition through the accelerometer and gyroscope.
+- Add Bluetooth recording of accelerometer and gyroscope (you can find a file using python as a receiver of the information and the INO file that sends the data through the BLE library).
+- Implement in a dance presentation or a museum (also in my house in holidays)
+- Add kinetic sculptures with servo motors to add an effect like the matilda movie.
+- Test prototype with a dancer.
+- Add the MadMapper API to add more visual effects with the animations.
+
+## License
+
+
+<!-- CONTACT -->
+## Contact
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
