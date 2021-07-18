@@ -50,7 +50,10 @@
   * [Model Training](#model-training)
   * [Mapping and lightning Script Running](#script)
   * [Model Serving](#model-serving)
-* [Roadmap](#roadmap)
+* [Challenges I ran into and What I learned](#challenges)
+* [Observations about the project](#observation)
+* [Accomplishments that I'm proud of](#accomplishments)
+* [What's next for Tiny ML in Mapping Dance, Visual Arts and interactive museums](#nextfor)
 * [License](#license)
 * [Contact](#contact)
 
