@@ -48,12 +48,12 @@
 * [Usage](#usage)
   * [Data Exploration](#data-exploration)
   * [Model Training](#model-training)
-  * [Mapping and lightning Script Running](#script)
-  * [Model Serving](#model-serving)
-* [Challenges I ran into and What I learned](#challenges)
-* [Observations about the project](#observation)
-* [Accomplishments that I'm proud of](#accomplishments)
-* [What's next for Tiny ML in Mapping Dance, Visual Arts and interactive museums](#nextfor)
+  * [Mapping and lightning Script Running](#running-mapping-script)
+  * [Perform the Model](#perform-the-model)
+* [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
+* [Observations about the project](#observations-about-the-project)
+* [Accomplishments that I'm proud of](#accomplishments-that-im-proud-of)
+* [What's next for Tiny ML in Mapping Dance, Visual Arts and interactive museums](##whats-next-for-tiny-ml-in-mapping-dance-visual-arts-and-interactive-museums)
 * [License](#license)
 * [Contact](#contact)
 
@@ -216,7 +216,7 @@ Although the results may not seem quite good, the model has achieved an accuracy
 
 The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in the same folder.
 
-### Running Mapping Script
+### Mapping and lightning Script Running
 
 <!-- image gifs -->
 
