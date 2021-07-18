@@ -14,6 +14,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/fullmakeralchemist/tinyml-mapping-backlight">
-    <img src="assets/logo.png" alt="Logo" width="256">
+    <img src="assets/logo.png" alt="Logo" width="480">
   </a>
 </p>
