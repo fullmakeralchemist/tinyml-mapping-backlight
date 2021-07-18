@@ -100,7 +100,7 @@ To get a local copy up and running follow these simple steps
 
 This is an example of how to list things you need to use the software and how to install them. 
 
-For this particular section I will suppose that you already have a Raspberry Pi already setup. If not I have a guide in Medium about [getting started on Raspberry Pi 4](https://fullmakeralchemist.medium.com/setting-up-your-raspberry-pi-4-wireless-f51c16937d1e). Also you will need git installed on your system. If not, I have a guide posted on [Medium](https://fullmakeralchemist.medium.com/install-git-and-visual-studio-code-on-raspberry-pi-48d054fdee07) to do it .
+For this particular section I will suppose that you already have a Raspberry Pi already setup. If not I have a guide in Medium about [Getting started on Raspberry Pi 4](https://fullmakeralchemist.medium.com/setting-up-your-raspberry-pi-4-wireless-f51c16937d1e). Also you will need git installed on your system. If not, I have a guide posted on [Medium](https://fullmakeralchemist.medium.com/install-git-and-visual-studio-code-on-raspberry-pi-48d054fdee07) to do it .
 For a general overview of the Arduino Nano 33 BLE Sense setup, you can check out the Arduino Guide on [Getting started with Arduino Nano 33 BLE Sense](https://www.arduino.cc/en/Guide/NANO33BLESense).
 
 Before installing the libraries in Raspberry Pi run the following code lines in the Raspberry Pi terminal:
@@ -120,3 +120,59 @@ To install the Mosquitto Broker enter these next commands:
 ```
 pi@raspberry:~ $ sudo apt install -y mosquitto mosquitto-clients
 ```
+
+You’ll have to type Y and press Enter to confirm the installation. To make Mosquitto auto start on boot up enter:
+
+```
+pi@raspberry:~ $ sudo systemctl enable mosquitto.service
+```
+```
+pi@raspberry:~ $  mosquitto -v
+```
+This returns the Mosquitto version that is currently running in your Raspberry Pi. It should be 1.5.X or above.
+
+#### Raspberry Pi IP Address & Paho Package
+
+To use Mosquitto broker later on your projects, you’ll need your Raspberry Pi IP address. To retrieve your Raspberry Pi IP address, type the next command in your Terminal window:
+```
+pi@raspberry:~ $ hostname -I
+```
+The Paho package provides a client class which enables applications to connect to an MQTT broker to publish messages, and to subscribe to topics and receive published messages. In this project, the Python script is going to publish messages to the ESP8266 to turn the GPIOs on and off to control the lights.
+To install paho-mqtt run the following command:
+
+```
+sudo pip install paho-mqtt
+```
+
+And those are the steps that we will follow to set up our Raspberry Pi. In any case, this specific setup can be seen in the corresponding raspberrypiserial folder.
+
+Now lets see the setup for the Arduino IDE
+
+#### Setup Arduino IDE
+
+To install the ESP8266 Board Package enter:
+
+```
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+```
+Into Additional Board Manager URLs field in the Arduino v1.6.4+ preferences.
+<!-- IMAGE -->
+Next, use the Board manager to install the ESP8266 package.
+<!-- image -->
+
+After the install process, you should see that esp8266 package is marked INSTALLED. Close the Boards Manager window once the install process has completed.
+
+Setup ESP8266 Support When you've restarted, select Adafruit Feather HUZZAH ESP8266  from the Tools->Board dropdown.
+
+#### Getting the MQTT library for the ESP8266
+For the ESP8266 to interact with the Raspberry Pi web server, you need to install the PubSubClient [library](https://github.com/knolleary/pubsubclient). This library provides a client for doing simple publish/subscribe messaging with a server that supports MQTT (basically allows your ESP8266 to talk with a Python web server).
+
+##### Installing the Library
+1. [Click here to download the PubSubClient library](https://github.com/knolleary/pubsubclient/archive/master.zip). You should have a .zip folder in your Downloads folder
+2. Unzip the .zip folder and you should get pubsubclient-master folder
+3. Rename your folder from pubsubclient-master to pubsubclient
+4. Move the pubsubclient folder to your Arduino IDE installation libraries folder
+5. Then, re-open your Arduino IDE
+
+The library comes with a number of example sketches. See File > Examples > PubSubClient within the Arduino IDE software.
+
