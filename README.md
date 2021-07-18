@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** fullmakeralchemist, tinyml-mapping-backlight, twitter_handle, fullmakeralchemist@gmail.com
+*** fullmakeralchemist, tinyml-mapping-backlight, twitter_handle, fullmakeralchemist@gmail.com   
 -->
 
 <!-- PROJECT LOGO -->
@@ -28,6 +28,9 @@
    <h3 align="center">Tiny ML in Mapping Dance, Visual Arts and interactive museums</h3>
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
+    <br />
+    <a href="https://youtu.be/3YUVTDTo-Zk"><strong>View the demo »</strong></a>
+    <br />
   </p>
   <br />
 </p>
