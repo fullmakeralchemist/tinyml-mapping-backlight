@@ -178,11 +178,18 @@ Into Additional Board Manager URLs field in the Arduino v1.6.4+ preferences.
 </center>
 
 Next, use the Board manager to install the ESP8266 package.
-<!-- image -->
+
+<center>
+<img src="assets/boardmanager.png" width="60%">
+</center>
 
 After the install process, you should see that esp8266 package is marked INSTALLED. Close the Boards Manager window once the install process has completed.
 
 Setup ESP8266 Support When you've restarted, select Adafruit Feather HUZZAH ESP8266  from the Tools->Board dropdown.
+
+<center>
+<img src="assets/dropdown.png" width="60%">
+</center>
 
 #### Getting the MQTT library for the ESP8266
 For the ESP8266 to interact with the Raspberry Pi web server, you need to install the PubSubClient [library](https://github.com/knolleary/pubsubclient). This library provides a client for doing simple publish/subscribe messaging with a server that supports MQTT (basically allows your ESP8266 to talk with a Python web server).
@@ -209,7 +216,9 @@ git clone https://github.com/fullmakeralchemist/tinyml-mapping-backlight
 
 The simplest way is just using the Thonny IDE which is included with Raspberry Pi OS, Thonny comes with Python 3.6 built in, so you don’t need to install anything. Just open up the program, which you’ll find under Menu > Programming. It offers a lot of advanced features not currently available in the Python 3 (IDLE) program. Also you can follow my guide to install Visual Studio Code, but some libraries show some errors trying to run the script. So I recommend you to use the Thonny IDE.
 
-<!-- image -->
+<center>
+<img src="assets/run.png" width="60%">
+</center>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -217,22 +226,33 @@ The simplest way is just using the Thonny IDE which is included with Raspberry P
 ### Data Exploration
 
 The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the Repository. This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab Notebook to train.
-<!-- image -->
+<center>
+<img src="assets/5.png" width="60%">
+</center>
 
 ### Model Training
 
 After reading Tiny ML Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers, I found this [resource](https://github.com/arduino/ArduinoTensorFlowLiteTutorials/) that helped me a lot to just focus on making some tests with different movements, training and testing with the Arduino board.
 
+<center>
+<img src="assets/4.png" width="60%">
+</center>
+
 As part of the project development I have implemented the proposed model using Tensorflow 2.0. For training I used the previously mentioned CSV files obtained from Arduino on a Google Colab environment using GPUs. So far the model was trained for 600 epochs using a batch size of 64. The training history can be seen in the following graphs:
 
-<!-- image graphs -->
+<center>
+<img src="assets/6.png" width="60%">
+</center>
+
 Although the results may not seem quite good, the model has achieved an accuracy value of 0.9149 on the validation dataset with 600 training epochs, with a record of at least 20 repeats of the movement recorded with the arduino capture file, also I try with 30 and 40 reparts, with more repetitions of the movement gets a better result, the problem is it gets tired repeat a movement so many times. We can get a general idea of the model performance in the arduino tinyimu file running the model printing the **line data.f[i] in the loop through the output tensor values from the model**.
 
 The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in the same folder.
 
 ### Mapping and lightning Script Running
 
-<!-- image gifs -->
+<center>
+<img src="assets/magic.gif" width="60%">
+</center>
 
 The script is the base of interaction for the player of mapping and lightning during the movements made. 
 The script has been entirely developed with Python on top of a VLC and MQTT integration, for a more intuitive and synchronous interaction. The script serves a real-time player, and lightning activation is served through the trained model that is deployed on the Arduino Nano 33 BLE Sense, which sends the data by serial connection to a ESP8266 board wireless using the MQTT broker. The script has to be changed on the line using the IP from the Raspberry to access the remote control of the lights and if the media is differente will have to be changed the path and the file name I will add the media that I used for this project on this link.
