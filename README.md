@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/fullmakeralchemist/tinyml-mapping-backlight">
-    <img src="assets/logo.png" alt="Logo" width="480">
+    <img src="assets/logo.png" alt="Logo" width="720">
   </a>
   <br />
 
@@ -50,3 +50,15 @@
 * [Roadmap](#roadmap)
 * [License](#license)
 * [Contact](#contact)
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<!-- linkvideo -->
+
+An intelligent assistant device to track moves with responses during a dance performance or an interactive building with mapping and Backlight.
+
+This project makes use of a machine learning algorithm capable of tracking and detecting moves to identify associated gesture recognition through a microcontroller. This allows the corresponding media, lightning and kinetic sculpture set to play when the right move was made because lighting interacts with all the visuals of a stage creating a new experience.
+
+
+### Motivation
