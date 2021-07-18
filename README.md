@@ -27,6 +27,6 @@
    <h3 align="center">Tiny ML in Mapping Dance, Visual Arts and interactive museums</h3>
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
-    
   </p>
 </p>
+<br />
