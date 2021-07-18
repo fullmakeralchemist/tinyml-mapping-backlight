@@ -62,3 +62,14 @@ This project makes use of a machine learning algorithm capable of tracking and d
 
 
 ### Motivation
+
+Some facts:
+-There are a lot of new art projects adding technology nowadays.
+-Factors like the difficulties that artists come up with during their attempts to familiarize with new technologies, so that they can integrate them in their projects.
+-High cost of buying and installing new software together with its supporting systems.
+-Limited access that a large percentage of the student population has to new technologies made it sometimes **difficult to use technology in dance**.
+
+##### Technology in art can be an element for good, but only when everyone is included.
+
+Interactive multimedia is one of the most important applications of technology. It is one of the most accessible technological innovations, which does not require expert knowledge in computer programming. Interactive multimedia involves a lot of elements (i.e. text, image, sound, graphics, etc.) all included in an easy learning environment where creative action and inquiry have the primary role.
+
