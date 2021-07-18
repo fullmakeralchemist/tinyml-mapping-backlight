@@ -103,9 +103,20 @@ This is an example of how to list things you need to use the software and how to
 For this particular section I will suppose that you already have a Raspberry Pi already setup. If not I have a guide in Medium about [getting started on Raspberry Pi 4](https://fullmakeralchemist.medium.com/setting-up-your-raspberry-pi-4-wireless-f51c16937d1e). Also you will need git installed on your system. If not, I have a guide posted on [Medium](https://fullmakeralchemist.medium.com/install-git-and-visual-studio-code-on-raspberry-pi-48d054fdee07) to do it .
 For a general overview of the Arduino Nano 33 BLE Sense setup, you can check out the Arduino Guide on [Getting started with Arduino Nano 33 BLE Sense](https://www.arduino.cc/en/Guide/NANO33BLESense).
 
-Before installing the libraries in Raspberry Pi run the following code lines:
+Before installing the libraries in Raspberry Pi run the following code lines in the Raspberry Pi terminal:
 
 ```
 sudo apt update
 sudo apt upgrade
+```
+After updating and upgrading we will write the following command:
+
+```
+sudo pip install python-vlc
+```
+
+To install the Mosquitto Broker enter these next commands:
+
+```
+pi@raspberry:~ $ sudo apt install -y mosquitto mosquitto-clients
 ```
