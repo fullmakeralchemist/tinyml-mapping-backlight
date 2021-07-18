@@ -48,7 +48,7 @@
 * [Usage](#usage)
   * [Data Exploration](#data-exploration)
   * [Model Training](#model-training)
-  * [Mapping and lightning Script Running](#running-mapping-script)
+  * [Mapping and lightning Script Running](##mapping-and-lightning-script-running)
   * [Perform the Model](#perform-the-model)
 * [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
 * [Observations about the project](#observations-about-the-project)
