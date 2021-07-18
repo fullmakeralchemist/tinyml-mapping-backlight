@@ -48,7 +48,7 @@
 * [Usage](#usage)
   * [Data Exploration](#data-exploration)
   * [Model Training](#model-training)
-  * [Mapping and lightning Script Running](##mapping-and-lightning-script-running)
+  * [Mapping and lightning Script Running](#mapping-and-lightning-script-running)
   * [Perform the Model](#perform-the-model)
 * [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
 * [Observations about the project](#observations-about-the-project)
@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- linkvideo -->
+[![Tiny ML in Mapping Dance](https://www.youtube.com/watch?v=3YUVTDTo-Zk/0.jpg)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
 
 An intelligent assistant device to track moves with responses during a dance performance or an interactive building with mapping and Backlight.
 
