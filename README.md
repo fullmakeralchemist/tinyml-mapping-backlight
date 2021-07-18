@@ -257,14 +257,17 @@ The trained model architecture, quantized model with tflite and encoded the Mode
 The script is the base of interaction for the player of mapping and lightning during the movements made. 
 The script has been entirely developed with Python on top of a VLC and MQTT integration, for a more intuitive and synchronous interaction. The script serves a real-time player, and lightning activation is served through the trained model that is deployed on the Arduino Nano 33 BLE Sense, which sends the data by serial connection to a ESP8266 board wireless using the MQTT broker. The script has to be changed on the line using the IP from the Raspberry to access the remote control of the lights and if the media is differente will have to be changed the path and the file name I will add the media that I used for this project on this link.
 
+<center>
+<img src="assets/7.png" width="60%">
+</center>
+
 ### Perform the Model
 
 The following image illustrates a general idea of the model working with the Raspberry Pi and the ESP8266 :
 
-
-<!-- image LAST -->
-
-
+<center>
+<img src="assets/8.png" width="60%">
+</center>
 
 Once that model has been trained, saved, quantized, encoded in an Arduino Header File to use in an Arduino Nano 33 BLE Sense and downloaded, the model has been ported into a TinyIMU Ino file. The Arduino connects directly to the Raspberry, then the lights mqtt ino file is uploaded to the ESP8266 board. We can run the script to run the animation on the projector and activate the lights as the deployed model predicts.
 
