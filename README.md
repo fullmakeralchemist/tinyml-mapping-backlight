@@ -176,3 +176,36 @@ For the ESP8266 to interact with the Raspberry Pi web server, you need to instal
 
 The library comes with a number of example sketches. See File > Examples > PubSubClient within the Arduino IDE software.
 
+Finally, you can upload the full [sketch]() to your ESP8266 (replace with your SSID, password and RPi IP address):
+
+### Run the script
+
+
+Clone the tinyml-mapping-backlight repo, download it or just copy and paste from the files from this repo:
+bash
+```
+git clone https://github.com/fullmakeralchemist/tinyml-mapping-backlight
+```
+
+The simplest way is just using the Thonny IDE which is included with Raspberry Pi OS, Thonny comes with Python 3.6 built in, so you don’t need to install anything. Just open up the program, which you’ll find under Menu > Programming. It offers a lot of advanced features not currently available in the Python 3 (IDLE) program. Also you can follow my guide to install Visual Studio Code, but some libraries show some errors trying to run the script. So I recommend you to use the Thonny IDE.
+
+<!-- image -->
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+### Data Exploration
+
+The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the Repository. This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab Notebook to train.
+<!-- image -->
+
+### Model Training
+
+After reading Tiny ML Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers, I found this [resource](https://github.com/arduino/ArduinoTensorFlowLiteTutorials/) that helped me a lot to just focus on making some tests with different movements, training and testing with the Arduino board.
+
+As part of the project development I have implemented the proposed model using Tensorflow 2.0. For training I used the previously mentioned CSV files obtained from Arduino on a Google Colab environment using GPUs. So far the model was trained for 600 epochs using a batch size of 64. The training history can be seen in the following graphs:
+
+<!-- image graphs -->
+Although the results may not seem quite good, the model has achieved an accuracy value of 0.9149 on the validation dataset with 600 training epochs, with a record of at least 20 repeats of the movement recorded with the arduino capture file, also I try with 30 and 40 reparts, with more repetitions of the movement gets a better result, the problem is it gets tired repeat a movement so many times. We can get a general idea of the model performance in the arduino tinyimu file running the model printing the **line data.f[i] in the loop through the output tensor values from the model**.
+
+The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in the same folder.
