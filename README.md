@@ -73,3 +73,23 @@ Some facts:
 
 Interactive multimedia is one of the most important applications of technology. It is one of the most accessible technological innovations, which does not require expert knowledge in computer programming. Interactive multimedia involves a lot of elements (i.e. text, image, sound, graphics, etc.) all included in an easy learning environment where creative action and inquiry have the primary role.
 
+### Built With
+
+With a lot of love 💖, motivation to help others 💪🏼 and [Python](https://www.python.org/) 🐍, using:
+
+* [Tensorflow 2.0](https://www.tensorflow.org/)
+* [Google Colab](https://colab.research.google.com/) <img src="https://colab.research.google.com/img/favicon.ico" width="15"> (with its wonderful GPUs)
+* Model quantization with `tf.lite` for serving ⚙️
+* Encode the Model in an Arduino Header File
+* A [Raspberry Pi](https://www.raspberrypi.org/) 4 <img src="https://www.raspberrypi.org/homepage-9df4b/favicon.png" width="15">
+* A [Arduino Nano 33 BLE SENSE](https://store.arduino.cc/usa/nano-33-ble-sense)
+* A [NodeMCU ESP8266](https://nodemcu.readthedocs.io/en/release/) board
+* The MQTT [Mosquitto](https://mosquitto.org/) Broker
+* The [Eclipse Paho](http://eclipse.org/paho/) MQTT Python client [library](https://pypi.org/project/paho-mqtt/)
+* [PubSubClient library](https://github.com/knolleary/pubsubclient/archive/master.zip) in Arduino IDE for the ESP8266 Board
+* Arduino IDE
+* ESP8266 Board [Package](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
