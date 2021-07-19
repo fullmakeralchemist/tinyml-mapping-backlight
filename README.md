@@ -294,7 +294,7 @@ The kinetic sculpture is a concept. A small servo motor controls the movement in
 </center>
 
 <center>
-<img src="" width="60%">
+<img src="assets/arm.gif" width="60%">
 </center>
 
 ## Challenges I ran into and What I learned
@@ -329,12 +329,25 @@ Training the moves could be hard doing more than 20 repetitions of a movement, a
 - Test prototype with a dancer.
 - Add the MadMapper API to add more visual effects with the animations.
 
+<center>
+<img src="assets/matilda.gif" width="60%">
+</center>
+
 ## License
 
 
 <!-- CONTACT -->
 ## Contact
 
+Eduardo Padron - [@makeralchemist](https://twitter.com/makeralchemist) - fullmakeralchemist@gmail.com
+
+Project Link: [https://github.com/fullmakeralchemist/tinyml-mapping-backlight](https://github.com/fullmakeralchemist/tinyml-mapping-backlight)
+
+IF YOU THINK THAT YOU CAN HELP ME TO HELP OTHERS, PLEASE DO NOT HESITATE TO CONTACT ME.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+
+* Icons made by [Flat Icons](https://www.flaticon.com/authors/flat-icons) from [www.flaticon.com](https://www.flaticon.com/)
+* Images and gifs made by [Canva](https://www.canva.com/) 
+* Thanks to the Tensorflow team Arduino and Raspberry Pi for developing such an incredible technology
