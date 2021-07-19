@@ -55,6 +55,7 @@
   * [Model Training](#model-training)
   * [Mapping and lightning Script Running](#mapping-and-lightning-script-running)
   * [Perform the Model](#perform-the-model)
+* [Kinetic Sculpture](#kinetic-sculpture)
 * [Challenges I ran into and What I learned](#challenges-i-ran-into-and-what-i-learned)
 * [Observations about the project](#observations-about-the-project)
 * [Accomplishments that I'm proud of](#accomplishments-that-im-proud-of)
@@ -231,7 +232,7 @@ The simplest way is just using the Thonny IDE which is included with Raspberry P
 
 ### Data Exploration
 
-The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the [Repository](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/Arduino_Sketches/capture_acc_gyro). This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab [Notebook]() to train.
+The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the [Repository](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/Arduino_Sketches/capture_acc_gyro). This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab [Notebook](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/blob/master/notebook/tinyml_Gesture.ipynb) to train.
 <center>
 <img src="assets/5.png" width="60%">
 </center>
