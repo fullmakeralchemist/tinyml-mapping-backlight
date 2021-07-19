@@ -18,6 +18,10 @@
   </a>
   <br />
 
+  <img src="https://img.shields.io/github/languages/top/fullmakeralchemist/tinyml-mapping-backlight?style=for-the-badge" alt="License" height="25">
+  <img src="https://img.shields.io/github/repo-size/fullmakeralchemist/tinyml-mapping-backlight?style=for-the-badge" alt="GitHub repo size" height="25">
+  <img src="https://img.shields.io/github/last-commit/fullmakeralchemist/tinyml-mapping-backlight?style=for-the-badge" alt="GitHub last commit" height="25">
+
   <a href="https://www.linkedin.com/in/fullmakeralchemist/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn" height="25">
   </a>
