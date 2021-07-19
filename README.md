@@ -64,7 +64,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=COiL0ocG&rs=AOn4CLDY8qcTab_YsFKlMCHN6k8gXd3T2w)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
+[![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=CKC504cG&rs=AOn4CLDDebjkkEPoghidxGhHDCEodq7Zzg)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
 
 
 An intelligent assistant device to track moves with responses during a dance performance or an interactive building with mapping and Backlight.
@@ -282,15 +282,15 @@ The script that serves as the interface between the Raspberry Pi, Arduino and th
 The kinetic sculpture is a concept. A small servo motor controls the movement in the sculpture. This could be added to the performance as a “dance partner” expanding the possibilities of creativity for the artist with this kind of elements, also in a museum maybe adding in a planetarium to start a cinematic with planet movements as an example of this automation applications with Tiny ML. Here are some examples of motors that could be integrated.
 
 <center>
-<img src="servogi.gif" width="60%">
+<img src="assets/servogi.gif" width="60%">
 </center>
 
 <center>
-<img src="rbgservo.gif" width="60%">
+<img src="assets/rbgservo.gif" width="60%">
 </center>
 
 <center>
-<img src="bugs.gif" width="60%">
+<img src="assets/bugs.gif" width="60%">
 </center>
 
 <center>
