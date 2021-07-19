@@ -164,7 +164,7 @@ To install paho-mqtt run the following command:
 sudo pip install paho-mqtt
 ```
 
-And those are the steps that we will follow to set up our Raspberry Pi. In any case, this specific setup can be seen in the corresponding raspberrypiserial folder.
+And those are the steps that we will follow to set up our Raspberry Pi. In any case, this specific setup can be seen in the corresponding [Raspberry_Script](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/Raspberry_Script) folder.
 
 Now lets see the setup for the Arduino IDE
 
@@ -207,7 +207,7 @@ For the ESP8266 to interact with the Raspberry Pi web server, you need to instal
 
 The library comes with a number of example sketches. See File > Examples > PubSubClient within the Arduino IDE software.
 
-Finally, you can upload the full [sketch]() to your ESP8266 (replace with your SSID, password and RPi IP address):
+Finally, you can upload the full [sketch](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/ESP8266_Sketches/lightsmqtt) to your ESP8266 (replace with your SSID, password and RPi IP address **see the comments in the sketch**):
 
 ### Run the script
 
@@ -229,7 +229,7 @@ The simplest way is just using the Thonny IDE which is included with Raspberry P
 
 ### Data Exploration
 
-The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the Repository. This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab Notebook to train.
+The dataset used for this project was obtained from the capture_acc_gyro file, you can find it in the [Repository](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/Arduino_Sketches/capture_acc_gyro). This dataset records 119 x,y and z acceleration and gyroscope data from on-board IMU and prints it to the Serial Monitor for one second when the significant motion is detected and prints the data in CSV format. This data will be copied and pasted into a text file and this text fill will be saved as a CSV file. To be uploaded to the Google Collab [Notebook]() to train.
 <center>
 <img src="assets/5.png" width="60%">
 </center>
@@ -248,9 +248,9 @@ As part of the project development I have implemented the proposed model using T
 <img src="assets/6.png" width="60%">
 </center>
 
-Although the results may not seem quite good, the model has achieved an accuracy value of 0.9149 on the validation dataset with 600 training epochs, with a record of at least 20 repeats of the movement recorded with the arduino capture file, also I try with 30 and 40 reparts, with more repetitions of the movement gets a better result, the problem is it gets tired repeat a movement so many times. We can get a general idea of the model performance in the arduino tinyimu file running the model printing the **line data.f[i] in the loop through the output tensor values from the model**.
+Although the results may not seem quite good, the model has achieved an accuracy value of 0.9149 on the validation dataset with 600 training epochs, with a record of at least 20 repeats of the movement recorded with the arduino capture file, also I try with 30 and 40 reparts, with more repetitions of the movement gets a better result, the problem is it gets tired repeat a movement so many times. We can get a general idea of the model performance in the arduino [TinyIMU file](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/Arduino_Sketches) running the model printing the **line data.f[i] in the loop through the output tensor values from the model**.
 
-The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in the same folder.
+The trained model architecture, quantized model with tflite and encoded the Model in an Arduino Header File(for the deployment in the Arduino board) can be found in the model folder. Finally, if you want to re-train the model and verify the results on your own, you have to upload the csv files found in this [folder](https://github.com/fullmakeralchemist/tinyml-mapping-backlight/tree/master/CSV_Files).
 
 ### Mapping and lightning Script Running
 
@@ -259,7 +259,7 @@ The trained model architecture, quantized model with tflite and encoded the Mode
 </center>
 
 The script is the base of interaction for the player of mapping and lightning during the movements made. 
-The script has been entirely developed with Python on top of a VLC and MQTT integration, for a more intuitive and synchronous interaction. The script serves a real-time player, and lightning activation is served through the trained model that is deployed on the Arduino Nano 33 BLE Sense, which sends the data by serial connection to a ESP8266 board wireless using the MQTT broker. The script has to be changed on the line using the IP from the Raspberry to access the remote control of the lights and if the media is differente will have to be changed the path and the file name I will add the media that I used for this project on this link.
+The script has been entirely developed with Python on top of a VLC and MQTT integration, for a more intuitive and synchronous interaction. The script serves a real-time player, and lightning activation is served through the trained model that is deployed on the Arduino Nano 33 BLE Sense, which sends the data by serial connection to a ESP8266 board wireless using the MQTT broker. The script has to be changed on the line using the IP from the Raspberry to access the remote control of the lights and if the media is differente will have to be changed the path and the file name. I added the media that I used for this project on this [link](https://drive.google.com/drive/folders/1uIEMpqL8vLfNuTHD6CSaq_Hc-jH8DiS8?usp=sharing).
 
 <center>
 <img src="assets/7.png" width="60%">
@@ -277,6 +277,25 @@ Once that model has been trained, saved, quantized, encoded in an Arduino Header
 
 The script that serves as the interface between the Raspberry Pi, Arduino and the ESP8266 BOARD is capable of printing the state of the VLC player as well as the MQTT connection don’t need the internet connection, just connected to the same router that is connected the ESP8266 board and the Arduno also can works on a hotspot in a smartphone. In general, the script takes only ~14% of the Raspberry Pi CPU it could be more if there are a lot of VLC windows open so I add a condition related to the state of the player so when the animation is over the player is closed to reduce the CPU use to avoid unnecessary CPU usage.
 
+## Kinetic Sculpture
+
+The kinetic sculpture is a concept. A small servo motor controls the movement in the sculpture. This could be added to the performance as a “dance partner” expanding the possibilities of creativity for the artist with this kind of elements, also in a museum maybe adding in a planetarium to start a cinematic with planet movements as an example of this automation applications with Tiny ML. Here are some examples of motors that could be integrated.
+
+<center>
+<img src="servogi.gif" width="60%">
+</center>
+
+<center>
+<img src="rbgservo.gif" width="60%">
+</center>
+
+<center>
+<img src="bugs.gif" width="60%">
+</center>
+
+<center>
+<img src="" width="60%">
+</center>
 
 ## Challenges I ran into and What I learned
 
