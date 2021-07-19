@@ -10,6 +10,8 @@
 *** fullmakeralchemist, tinyml-mapping-backlight, twitter_handle, fullmakeralchemist@gmail.com   
 -->
 
+# The TensorFlow Microcontroller Challenge
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
