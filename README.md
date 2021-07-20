@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=CIDM04cG&rs=AOn4CLBLu0hqs1pvO4iZv0P2YmmkCr4XMw)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
+[![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=CNTs2IcG&rs=AOn4CLBiPsvQ2bGNVZvn_j-nJXj8d81hLA)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
 
 
 An intelligent assistant device to track moves with responses during a dance performance or an interactive building with mapping and Backlight.
