@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=CNTs2IcG&rs=AOn4CLBiPsvQ2bGNVZvn_j-nJXj8d81hLA)](https://www.youtube.com/watch?v=3YUVTDTo-Zk)
+<!-- [![Tiny ML in Mapping Dance](https://i9.ytimg.com/vi/3YUVTDTo-Zk/mq1.jpg?sqp=CNTs2IcG&rs=AOn4CLBiPsvQ2bGNVZvn_j-nJXj8d81hLA)](https://www.youtube.com/watch?v=3YUVTDTo-Zk) -->
 
 
 An intelligent assistant device to track moves with responses during a dance performance or an interactive building with mapping and Backlight.
@@ -346,7 +346,7 @@ Training the moves could be hard doing more than 20 repetitions of a movement, a
 <!-- CONTACT -->
 ## Contact
 
-Eduardo Padron - [@makeralchemist](https://twitter.com/makeralchemist) - fullmakeralchemist@gmail.com
+Eduardo Padron - [@makeralchemist](https://twitter.com/makeralchemist) - 
 
 Project Link: [https://github.com/fullmakeralchemist/tinyml-mapping-backlight](https://github.com/fullmakeralchemist/tinyml-mapping-backlight)
 
