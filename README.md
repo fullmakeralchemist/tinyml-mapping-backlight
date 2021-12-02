@@ -263,7 +263,7 @@ The trained model architecture, quantized model with tflite and encoded the Mode
 ### Mapping and lightning Script Running
 
 <center>
-<img src="assets/TFChallengeWinners.gif" width="60%">
+<img src="assets/Mapping_Dance_Hero.gif" width="60%">
 </center>
 
 The script is the base of interaction for the player of mapping and lightning during the movements made. 
