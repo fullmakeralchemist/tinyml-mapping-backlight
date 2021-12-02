@@ -39,6 +39,9 @@
     <a href="https://experiments.withgoogle.com/mapping-dance"><strong>View the project»</strong></a>
     <br />
   </p>
+  <a href="https://experiments.withgoogle.com/mapping-dance">
+    <img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
+  </a>
   <br />
 </p>
 <br />
@@ -260,7 +263,7 @@ The trained model architecture, quantized model with tflite and encoded the Mode
 ### Mapping and lightning Script Running
 
 <center>
-<img src="assets/magic.gif" width="60%">
+<img src="assets/TFChallengeWinners.gif" width="60%">
 </center>
 
 The script is the base of interaction for the player of mapping and lightning during the movements made. 
