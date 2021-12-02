@@ -36,7 +36,7 @@
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
     <br />
-    <a href="https://youtu.be/3YUVTDTo-Zk"><strong>View the demo »</strong></a>
+    <a href="https://experiments.withgoogle.com/mapping-dance"><strong>View the project»</strong></a>
     <br />
   </p>
   <br />
