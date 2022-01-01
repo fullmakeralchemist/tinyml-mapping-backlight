@@ -39,9 +39,11 @@
     <a href="https://experiments.withgoogle.com/mapping-dance"><strong>View the project»</strong></a>
     <br />
   </p>
+  <p align="center">
   <a href="https://experiments.withgoogle.com/mapping-dance">
-    <align="center" img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
+    <img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
   </a>
+  </p>
   <br />
 </p>
 <br />
