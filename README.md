@@ -10,7 +10,7 @@
 *** fullmakeralchemist, tinyml-mapping-backlight, twitter_handle, fullmakeralchemist@gmail.com   
 -->
 
-# The TensorFlow Microcontroller Challenge
+#     The TensorFlow Microcontroller Challenge
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,7 +31,7 @@
   <a href="https://twitter.com/makeralchemist/">
     <img src="https://img.shields.io/twitter/follow/makeralchemist?label=Twitter&logo=twitter&style=for-the-badge" alt="Twitter" height="25">
   </a>
-
+   <h4 align="center">🏆 WINNER OF THE TENSORFLOW LITE FOR MICROCONTROLLERS CHALLENGE 🏆</h3>
    <h3 align="center">Tiny ML in Mapping Dance, Visual Arts and interactive museums</h3>
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
@@ -39,7 +39,7 @@
     <a href="https://experiments.withgoogle.com/mapping-dance"><strong>View the project»</strong></a>
     <br />
   </p>
-  <a href="https://experiments.withgoogle.com/mapping-dance">
+  <a align="center" href="https://experiments.withgoogle.com/mapping-dance">
     <img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
   </a>
   <br />
@@ -132,7 +132,7 @@ sudo apt upgrade
 After updating and upgrading we will write the following command:
 
 ```
-sudo pip install python-vlc
+sudo pip3 install python-vlc
 ```
 
 To install the Mosquitto Broker enter these next commands:
