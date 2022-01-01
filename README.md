@@ -10,7 +10,7 @@
 *** fullmakeralchemist, tinyml-mapping-backlight, twitter_handle, fullmakeralchemist@gmail.com   
 -->
 
-#     The TensorFlow Microcontroller Challenge
+<!--#     The TensorFlow Microcontroller Challenge    -->
    <h1>🏆 Winner of the Tensorflow Lite Microcontroller Challenge 🏆</h1>
 
 <!-- PROJECT LOGO -->
