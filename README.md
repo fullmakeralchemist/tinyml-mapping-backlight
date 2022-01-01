@@ -31,7 +31,7 @@
   <a href="https://twitter.com/makeralchemist/">
     <img src="https://img.shields.io/twitter/follow/makeralchemist?label=Twitter&logo=twitter&style=for-the-badge" alt="Twitter" height="25">
   </a>
-   <h4 align="center">🏆 WINNER OF THE TENSORFLOW LITE FOR MICROCONTROLLERS CHALLENGE 🏆</h3>
+   <h2 align="center">🏆 WINNER OF THE TENSORFLOW LITE FOR MICROCONTROLLERS CHALLENGE 🏆</h3>
    <h3 align="center">Tiny ML in Mapping Dance, Visual Arts and interactive museums</h3>
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
@@ -39,8 +39,8 @@
     <a href="https://experiments.withgoogle.com/mapping-dance"><strong>View the project»</strong></a>
     <br />
   </p>
-  <a align="center" href="https://experiments.withgoogle.com/mapping-dance">
-    <img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
+  <a href="https://experiments.withgoogle.com/mapping-dance">
+    <align="center" img src="assets/TFChallengeWinners.png" alt="Logo" width="720">
   </a>
   <br />
 </p>
