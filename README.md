@@ -11,7 +11,7 @@
 -->
 
 #     The TensorFlow Microcontroller Challenge
-   <h1🏆 Winner of the Tensorflow Lite Microcontroller Challenge 🏆</h1>
+   <h1>🏆 Winner of the Tensorflow Lite Microcontroller Challenge 🏆</h1>
 
 <!-- PROJECT LOGO -->
 <br />
