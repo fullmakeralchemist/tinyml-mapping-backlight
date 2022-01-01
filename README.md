@@ -11,6 +11,7 @@
 -->
 
 #     The TensorFlow Microcontroller Challenge
+   <h2 align="center">🏆 Winner of the Tensorflow Lite Microcontroller Challenge 🏆</h2>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,7 +32,6 @@
   <a href="https://twitter.com/makeralchemist/">
     <img src="https://img.shields.io/twitter/follow/makeralchemist?label=Twitter&logo=twitter&style=for-the-badge" alt="Twitter" height="25">
   </a>
-   <h2 align="center">🏆 WINNER OF THE TENSORFLOW LITE FOR MICROCONTROLLERS CHALLENGE 🏆</h3>
    <h3 align="center">Tiny ML in Mapping Dance, Visual Arts and interactive museums</h3>
   <p align="center">
     Because Art Inspired Technology, Technology Inspired Art
